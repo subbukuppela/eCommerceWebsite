@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace eCommerce.Models
 {
@@ -16,10 +17,12 @@ namespace eCommerce.Models
         /// Property : Name.
         /// </summary>
         [Required]
+        [DisplayName("Category Name")]
         public string? Name { get; set; }
         /// <summary>
         /// Property : DisplayOrder.
         /// </summary>
+        [DisplayName("Display Order")]
         public int DisplayOrder { get; set; }
     }
 }
